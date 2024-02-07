@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #004d99; /* Deep blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center the list items */
+    gap: 20px; /* Add some space between list items */
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #f2f2f2; /* Light grey */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* This should already align items to left and right */
+    width: 100%; /* Ensure footer spans full width */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between; /* Ensure this is correctly spreading elements */
+    width: 90%; /* Make sure the container spans the full width of the footer */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* Add for individual link alignment if necessary */
+}
+
+.footer-links a:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
