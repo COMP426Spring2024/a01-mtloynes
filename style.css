@@ -1,73 +1,115 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; /* Default font */
 }
 
+/* Header styles */
 header {
     background-color: #004d99; /* Deep blue */
     color: white;
     padding: 20px;
+    width: 100%;
     text-align: center;
+    font-family: 'Lato', sans-serif; /* Secondary font for header */
 }
 
+/* Navigation styles */
 nav ul {
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none; /* Removes default list styling */
     padding: 0;
     margin: 0;
-    display: flex; /* Display list items in a row */
-    justify-content: center; /* Center the list items */
-    gap: 20px; /* Add some space between list items */
+    display: flex; /* Displays list items in a row */
+    justify-content: center; /* Centers the list items */
+    gap: 20px; /* Adds space between list items */
 }
 
-nav li {
-    display: inline;
-}
-
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     background-color: #007bff; /* Blue */
     border-radius: 5px;
+    font-weight: 700; /* Makes nav links bold */
+
 }
 
 nav a:hover {
     background-color: #0056b3; /* Darker blue */
 }
 
-main {
-    flex: 1;
-    padding: 20px;
+.box {
+    width: 1500px;
+    height: 100px;
+    background-color: #95e6e6; /* Red box */
+    margin: 20px;
 }
 
+/* Main content styles */
+main {
+    width: 90%; /* Adjusts based on preference */
+    max-width: 1200px; /* Prevents content from stretching too wide */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    text-align: center; /* Centers text within the content section */
+}
+
+.content img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centers the image within its container */
+}
+
+/* Footer styles */
 footer {
     background-color: #f2f2f2; /* Light grey */
     padding: 20px;
     display: flex;
-    justify-content: center; /* This should already align items to left and right */
-    width: 100%; /* Ensure footer spans full width */
+    justify-content: center; /* Aligns items to the center */
+    width: 100%; /* Ensures footer spans full width */
 }
-
+.footer-links a:hover {
+    background-color: #cccccc; /* Light grey for hover */
+    color: #333333; /* Darker text color on hover */
+}
 .footer-links {
     display: flex;
-    justify-content: space-between; /* Ensure this is correctly spreading elements */
-    width: 90%; /* Make sure the container spans the full width of the footer */
+    justify-content: space-between; /* Correctly spreads elements */
+    width: 90%; /* Ensures the container spans the full width of the footer */
 }
 
-.footer-links a {
-    text-decoration: none;
-    color: white;
-    background-color: #007bff; /* Blue */
-    padding: 10px 20px;
-    border-radius: 5px;
-    /* Add for individual link alignment if necessary */
+/* Table styles */
+.table {
+    width: 75%; /* Table width adjustment */
+    border-collapse: collapse; /* Removes space between borders */
+    margin: 20px auto; /* Centers the table horizontally and adds space above */
 }
 
-.footer-links a:hover {
-    background-color: #0056b3; /* Darker blue */
+th, td {
+    border: 1px solid #000; /* Adds border to each cell */
+    text-align: center; /* Centers content horizontally */
+    padding: 8px; /* Adds padding inside each cell */
 }
 
+th {
+    background-color: #004d99; /* Deep blue, matching the header */
+    color: white; /* White text for contrast */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
